@@ -1,4 +1,4 @@
-import LoginButton from "./app/components/LoginButton";
+import Card from "./app/components/Card";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 
