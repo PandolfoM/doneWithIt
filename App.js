@@ -1,11 +1,8 @@
-import Card from "./app/components/Card";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
-import MessagesScreen from "./app/screens/MessagesScreen";
-import AccountScreen from "./app/screens/AccountScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
-import ListingsScreen from "./app/screens/ListingsScreen";
+import { useState } from "react";
+import { Text, TextInput } from "react-native";
+import AppTextInput from "./app/components/AppTextInput";
+import Screen from "./app/components/Screen";
 
 export default function App() {
-  return <ListingsScreen />;
+  return <Screen></Screen>;
 }
