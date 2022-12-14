@@ -1,38 +1,41 @@
 import React from "react";
 import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
-import colors from "../config/colors";
 
-function Card({ children }) {
+import colors from "../config/colors";
+import AppText from "./AppText";
+
+function Card({ title, subTitle, image }) {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.card}>
-        <Image
-          resizeMode="contain"
-          source={require("../assets/jacket.jpg")}
-          style={styles.image}></Image>
-        <Text>Red jacket for sale!</Text>
+    <View style={styles.card}>
+      <Image style={styles.image} source={image} />
+      <View style={styles.detailsContainer}>
+        <AppText style={styles.title}>{title}</AppText>
+        <AppText style={styles.subTitle}>{subTitle}</AppText>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
+    borderRadius: 15,
     backgroundColor: colors.white,
-    width: "90%",
-    height: 300,
-    borderRadius: 20,
+    marginBottom: 20,
+    overflow: "hidden",
   },
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    backgroundColor: "#f8f4f4",
-    flexDirection: "row",
+  detailsContainer: {
+    padding: 20,
   },
   image: {
     width: "100%",
-    height: "100%",
-    backgroundColor: "red",
+    height: 200,
+  },
+  subTitle: {
+    color: colors.secondary,
+    fontWeight: "bold",
+  },
+  title: {
+    marginBottom: 7,
   },
 });
 
