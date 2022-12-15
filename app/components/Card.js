@@ -2,15 +2,19 @@ import React from "react";
 import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 import colors from "../config/colors";
-import AppText from "./AppText";
+import AppText from "./Text";
 
-function Card({ title, subTitle, image }) {
+function Card({ title, subTitle, image, ...otherProps }) {
   return (
     <View style={styles.card}>
       <Image style={styles.image} source={image} />
       <View style={styles.detailsContainer}>
-        <AppText style={styles.title}>{title}</AppText>
-        <AppText style={styles.subTitle}>{subTitle}</AppText>
+        <AppText style={styles.title} {...otherProps}>
+          {title}
+        </AppText>
+        <AppText style={styles.subTitle} {...otherProps}>
+          {subTitle}
+        </AppText>
       </View>
     </View>
   );

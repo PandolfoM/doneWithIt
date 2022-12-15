@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FlatList, StyleSheet } from "react-native";
+import { FlatList } from "react-native";
 
 import {
   ListItem,
@@ -11,8 +11,10 @@ import Screen from "../components/Screen";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna urna, facilisis eu sapien ac, molestie rhoncus magna. Mauris nec tellus quis neque auctor ornare. Nunc porttitor odio in odio tempor, nec molestie velit accumsan. Sed condimentum porta laoreet. Mauris semper sem vitae nulla ultricies vestibulum. Integer efficitur orci et leo maximus, gravida finibus nibh imperdiet. Suspendisse a urna rhoncus, vestibulum arcu a, lobortis tellus.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna urna, facilisis eu sapien ac, molestie rhoncus magna. Mauris nec tellus quis neque auctor ornare. Nunc porttitor odio in odio tempor, nec molestie velit accumsan. Sed condimentum porta laoreet. Mauris semper sem vitae nulla ultricies vestibulum. Integer efficitur orci et leo maximus, gravida finibus nibh imperdiet. Suspendisse a urna rhoncus, vestibulum arcu a, lobortis tellus.",
     image: require("../assets/matt.png"),
   },
   {
@@ -63,7 +65,5 @@ function MessagesScreen(props) {
     </Screen>
   );
 }
-
-const styles = StyleSheet.create({});
 
 export default MessagesScreen;

@@ -30,6 +30,7 @@ function ListingsScreen(props) {
             title={item.title}
             subTitle={"$" + item.price}
             image={item.image}
+            numberOfLines={1}
           />
         )}
       />
