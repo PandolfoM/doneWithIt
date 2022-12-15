@@ -14,7 +14,10 @@ function LoginScreen() {
   return (
     <Screen style={styles.container}>
       <Image style={styles.logo} source={require("../assets/logo-red.png")} />
-      <AppForm>
+      <AppForm
+        initialValues={{ email: "", password: "" }}
+        onSubmit={(values) => console.log(values)}
+        validationSchema={validationSchema}>
         <AppFormField
           autoCapitalize="none"
           autoCorrect={false}
