@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { NavigationContainer } from "@react-navigation/native";
 
-import Screen from "./app/components/Screen";
-import ImageInput from "./app/components/ImageInput";
-import ImageInputList from "./app/components/ImageInputList";
-import ListingEditScreen from "./app/screens/ListingEditScreen";
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
+import AuthNavigator from "./app/navigation/AuthNavigator";
+
 export default function App() {
-  return <ListingEditScreen />;
+  return (
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
+  );
 }
