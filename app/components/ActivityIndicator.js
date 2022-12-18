@@ -1,5 +1,4 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
 import AnimatedLottieView from "lottie-react-native";
 
 function ActivityIndicator({ visible = false }) {
