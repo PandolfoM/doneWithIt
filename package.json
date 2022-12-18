@@ -17,6 +17,7 @@
     "@react-navigation/native-stack": "^6.9.6",
     "apisauce": "^2.1.6",
     "expo": "~47.0.8",
+    "expo-app-loading": "~2.1.1",
     "expo-blur": "~12.0.1",
     "expo-constants": "^14.0.2",
     "expo-image-picker": "~14.0.2",
