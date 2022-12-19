@@ -5,6 +5,7 @@ import { TouchableWithoutFeedback } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 
 import colors from "../config/colors";
+import logger from "../utility/logger";
 
 function ImageInput({ imageUri, onChangeImage }) {
   useEffect(() => {
@@ -33,7 +34,7 @@ function ImageInput({ imageUri, onChangeImage }) {
       });
       if (!result.canceled) onChangeImage(result.assets[0].uri);
     } catch (error) {
-      console.log("Error reading image");
+      logger.log("Error reading image");
     }
   };
 

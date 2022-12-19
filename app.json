@@ -29,6 +29,11 @@
     },
     "notification": {
       "iosDisplayInForeground": true
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "255003569c9cdaafb855b728392ffa37"
+      }
     }
   }
 }
